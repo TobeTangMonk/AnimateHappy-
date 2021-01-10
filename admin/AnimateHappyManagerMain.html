@@ -1,0 +1,254 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>宠物乐园后台页面</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+   <link href="../../static/css/semantic.min.css">
+    <style>
+        li{
+        list-style:none;
+        decoration:none;
+        }
+        a.item:hover{
+        background: black;
+        font-size: 111%;
+        color:black;
+
+
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="ui grid" style="height:999px !important">
+    <div class="ui three wide column" style="background:black;height:900!important">
+        <nav>
+            <div class="ui vertical fluid menu">
+<!--                用semantic-ui布局-->
+                <div class="ui segments">
+
+                    <div class="ui attach fluid center aligned segment">
+                    <h2 class="ui teal basic item header">AnimateHappy</h2>
+                </div>
+
+                    <div class="ui attached fluid center aligned segment">
+
+                    <div class="ui attached fluid center aligned segment"><li>
+
+    <button class="ui teal big button"><a href="AnimateHappyManagerMassagejsp" class="item">宠物信息</a></li></div></button>
+                       
+                    <div class="ui attached fluid center aligned segment"> 
+
+<button class="ui  orange big button"> <li><a href="AnimateHappySale.jsp" class="item">宠物销售</a></li></button>
+
+                       </div>
+                    <div class="ui attached fluid center aligned segment">
+<button class="ui teal medium button"> <li><a href="" class="item">售后宠物状态跟踪管理</a></li></button>
+                    </div>
+                    <div class="ui attached fluid center aligned segment">
+
+<button class="ui teal big button">     <li><a href="HotAnimate.jsp" class="item">热门宠物</a></li></button>
+                   </div>
+                    <div class="ui attached fluid center aligned segment">
+
+<button class="ui teal medium button"> <li><a href="Price.jsp" class="item">宠物价格表</a></li></div></button>
+                       
+                        <div class="ui attached fluid center aligned segment">
+
+<button class="ui teal medium button">   <li><a href="AnimateHappyClassifyjsp" class="item">宠物分类</a></li></div></button>
+
+
+
+                </div>
+                <div class="ui attached fluid center aligned segment"> 
+                    <button class="ui red medium button">   
+                     <li><a href="profilejsp" class="item">留言</a></li></div>
+          </button>
+                 
+s
+            </div>
+
+
+
+
+
+
+        </nav>
+
+
+
+
+    </div>
+
+    <nav> <div class="ui thirteen wide column" style="background:teal;height:900!important">
+        <div class="ui menu">
+            <i class="ui inverted bars icon"></i>
+           
+
+           
+             <div class="ui   item m-hide m-item">
+                <!-- 添加transparent可以变透明 -->
+                <div class="ui icon input m-hide">
+
+                    <!-- placeholder可以显示Search..... -->
+                    <input type="text" placeholder="Seach......">
+                    <i class="ui inverted circular link search icon"></i>
+
+
+
+                </div>
+            </div>
+            <div class="li right aligned item">
+                <button class="ui black circular button"> <a href="">登录</a> <a href=" ">注册</a></div></button>
+
+
+                
+
+
+           
+        </div>
+
+    </div>
+
+     <div class="ui container">     <div class="ui fluid table">
+
+         <table border="1px" cellspacing="0" style="">
+             <!-- 每行的宽度 col height 高度 cautious! 每个th有自己的默认宽度一定多加 -->
+             <col width="150px">
+             <col width="150px">
+             <col width="150px">
+             <col width="150px">
+             <col width="150px">
+             <col width="150px">
+             <col width="150px">
+            
+
+             <tr height="66px" >
+                 <td colspan="8" style="text-align: center;"><h2 class="ui yellow basic header">宠物的信息表 </h2></th>
+
+             </tr>
+             <tr height="66px" bgcolor="yellow">
+                 <th>宠物名字</th>
+                 <th>宠物来源地</th>
+                 <th bgcolor="ui yellow basic">宠物注意事项</th>
+                 <th>宠物体重</th>
+                 <th>宠物喜好</th>
+                 <th>宠物的父母亲</th>
+                 <th>宠物的大概寿命</th>
+                 
+             </tr>
+             <tr height="66px">藏獒
+                 <th>哈士奇</th>
+                 <th>美国</th>
+                 <th bgcolor="ui yellow basic">该狗超级可爱但是你要小心它的顽皮，他可就把你的家直接搬了，
+                 搞历你欲哭无泪</th>
+                 <th>一般来说还好</th>
+                 <th>喜欢和人亲热</th>
+                 <th>这个我也不知道</th>
+                 <th>大概10年</th>
+                 
+             </tr>
+             <tr height="66px">
+               <th>哈士奇</th>
+                 <th>美国</th>
+                 <th bgcolor="ui yellow basic">该狗超级可爱但是你要小心它的顽皮，他可就把你的家直接搬了，
+                 搞历你欲哭无泪</th>
+                 <th>一般来说还好</th>
+                 <th>喜欢和人亲热</th>
+                 <th>这个我也不知道</th>
+                 <th>大概10年</th>
+             </tr>
+             <tr height="66px">
+               <th>藏獒</th>
+                 <th>西藏</th>
+                 <th bgcolor="ui yellow basic">小心它，它非常的凶狠，如果不小心被它逮到你还是认输为好，因为它会原谅你的，所以好好的爱你的狗狗</th>
+              <th></th>
+               
+                 <th></th>
+                 <th></th>
+                 <th></th>
+             </tr>
+             <tr height="66px">
+                 <th>藏獒</th>
+                 <th>西藏</th>
+                 <th bgcolor="ui yellow basic">小心它，它非常的凶狠，如果不小心被它逮到你还是认输为好，因为它会原谅你的，所以好好的爱你的狗狗</th>
+                 
+                 <th></th>
+                 <th></th>
+                 <th></th>
+                 <th></th>
+             </tr>
+             <tr height="66px">
+                <th>藏獒</th>
+                 <th>西藏</th>
+                 <th bgcolor="ui yellow basic">小心它，它非常的凶狠，如果不小心被它逮到你还是认输为好，因为它会原谅你的，所以好好的爱你的狗狗</th>
+                 
+                 <th></th>
+                 <th></th>
+                 <th></th>
+                 <th></th>
+             </tr>
+             <tr height="66px">
+                 <th></th>
+                 <th></th>
+                 <th></th>
+                 <th></th>
+                 <th></th>
+                 <th></th>
+                 <th></th>
+             </tr>
+             <tr height="66px">
+                 <th></th>
+                 <th></th>
+                 <th></th>
+                 <th></th>
+                 <th></th>
+                 <th></th>
+                 <th></th>
+             </tr>
+             <tr height="66px">
+                 <th></th>
+                 <th></th>
+                 <th></th>
+                 <th></th>
+                 <th></th>
+                 <th></th>
+                 <th></th>
+             </tr>
+               
+                <!--  -->
+    
+   <th colspan="2">  <button class="ui teal basic button" style="display:inline !important" >上一页</button>
+       <button class="ui teal basic button"style="display:inline !important">下一页</button>  </th>
+
+
+                 <th colspan="6" class="ui right aligned"><button class="ui teal basic button">增加</button>
+                     <button class="ui red basic button">批量增加</button>
+                     <button class="ui red button"> 删除</button>
+                 </th>
+
+             </tr>
+         </table>
+
+
+     </div> </div>
+
+
+    </div>
+
+
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+
+</body>
+</html>

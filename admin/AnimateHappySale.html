@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>宠物乐园后台管理页面</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+   <link href="../../static/css/semantic.min.css">
+ 
+     <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
+    <style>
+        li{
+        list-style:none;
+        decoration:none;
+        }
+        a.item:hover{
+        background: black;
+        font-size:166%;
+
+        color:black;
+
+
+
+
+        }
+
+ .m-right-bottom{
+  right:0 !important;
+  bottom: 0 !important;
+  
+
+
+ }
+ .m-fixed{
+ 
+  position:fixed;
+/*----z-index表示的是显示的层级越大表示越上层-------*/
+  z-index:10 !important;
+
+} 
+
+
+
+    </style>
+</head>
+<body>
+<div class="ui grid" style="height:999px !important">
+    <div class="ui three wide column" style="background:black;height:900!important">
+        <nav>
+            <div class="ui vertical fluid menu">
+<!--                用semantic-ui布局-->
+                <div class="ui segments">
+
+                    <div class="ui attach fluid center aligned segment">
+                    <h2 class="ui teal basic item header">AnimateHappy</h2>
+                </div>
+
+                    <div class="ui attached fluid center aligned segment">
+
+                    <div class="ui attached fluid center aligned segment"><li><a href="AnimateHappyManagerMassage.html" class="item">宠物信息</a></li></div>
+                    <div class="ui attached fluid center aligned segment"> <li><a href="AnimateHappySale.html" class="item">宠物销售</a></li></div>
+                    <div class="ui attached fluid center aligned segment"> <li><a href="" class="item">售后宠物状态跟踪管理</a></li></div>
+                    <div class="ui attached fluid center aligned segment"><li><a href="" class="item">热门宠物</a></li></div>
+                    <div class="ui attached fluid center aligned segment"><li><a href="" class="item">宠物价格表</a></li></div>
+                        <div class="ui attached fluid center aligned segment"><li><a href="AnimateHappyClassify.html" class="item">宠物分类</a></li></div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+        </nav>
+
+
+
+
+    </div>
+
+
+<!-- 上面的导航栏 -->
+
+    <nav>  <div class="ui thirteen wide column" style="background:teal;height:900!important">
+        <div class="ui menu">
+            <i class="ui inverted bars icon"></i>
+            <div class="li item"><a href="dog.html"  class="item">狗类</a></div>
+            <div class="li item"><a href="cat.html"  class="item">猫类</a></div>
+            <div class="li item"><a href="other.html" class="item">其它类</a></div>
+           
+
+            <div class="li item"><a href="profile.html" class="item">留言</a></div>
+             <div class="ui   item m-hide m-item">
+                <!-- 添加transparent可以变透明 -->
+                <div class="ui icon input m-hide">
+
+                    <!-- placeholder可以显示Search..... -->
+                    <input type="text" placeholder="Seach......">
+                    <i class="ui inverted circular link search icon"></i>
+
+
+
+                </div>
+            </div>
+            <div class="li right aligned item">
+                <button class="ui black circular button"> <a href="">登录</a> <a href=" ">注册</a></div></button>
+
+
+                
+
+
+           
+        </div>
+
+    </div>
+
+
+
+<div class="ui container">
+
+
+<!-- 第一 -->
+
+<!-- 左边部分-->
+    <div class="ui grid">
+    
+ <div class="nine wide column">
+     <img src="assets/dist/img/ZhangAo.jpg" alt="" class="ui rounded image" width="600px" height="300px">
+ </div>
+
+ <!-- 右边部分 -->
+ <div class="seven wide column">
+    <div class="ui grid">
+        <div class="ten wide column"> <div class="ui left floated"> <h2 class="ui teal basic header">
+    <a href=" "> 广州宠物狗狗犬舍出售纯种藏獒</a></h2> 
+       <p> 发布时间：01月04日 </p> 
+       <p> 在售年龄：3个月 在售只数： 10只 </p>
+<p> 卖家承诺：诚信第一，可签订合同！</p>  </div></div>
+        <div class="six wide column" style="margin-top: 60px !important;">
+
+          <div class="ui right floated"><h2 class="ui red basic header">价格：</h2> <strong style="color: red !important;font-size: 30px !important"> 1200元</strong>
+
+        </div>
+
+
+                
+
+               
+
+
+      </div>
+        
+
+
+    </div>
+   
+   
+ <div class="ui grid"> 
+
+  <div class="eight wide column"><div class="btn btn-primary btn-lg btn-flat" style="float: left;">
+                  <i class="fas fa-cart-plus fa-lg mr-2"></i> 
+                 加入购物车
+                </div>
+
+</div>
+  <div class="eight wide column"> <div class="btn btn-default btn-lg btn-flat" style="display: inline-block;">
+                  <i class="fas fa-heart fa-lg mr-2"></i> 
+                 添加到我喜欢
+                </div>
+              </div>
+
+   
+ </div>
+        
+
+</div>
+
+
+</div>
+
+<!-- 第一 -->
+
+<!-- 左边部分-->
+    <div class="ui grid">
+    
+ <div class="nine wide column">
+     <img src="assets/dist/img/ZhangAo.jpg" alt="" class="ui rounded image" width="600px" height="300px">
+ </div>
+
+ <!-- 右边部分 -->
+ <div class="seven wide column">
+    <div class="ui grid">
+        <div class="ten wide column"> <div class="ui left floated"> <h2 class="ui teal basic header">
+    <a href=" "> 广州宠物狗狗犬舍出售纯种藏獒</a></h2> 
+       <p> 发布时间：01月04日 </p> 
+       <p> 在售年龄：3个月 在售只数： 10只 </p>
+<p> 卖家承诺：诚信第一，可签订合同！</p>  </div></div>
+        <div class="six wide column" style="margin-top: 60px !important;">
+
+          <div class="ui right floated"><h2 class="ui red basic header">价格：</h2> <strong style="color: red !important;font-size: 30px !important"> 1200元</strong>
+
+        </div>
+
+
+                
+
+               
+
+
+      </div>
+        
+
+
+    </div>
+   
+   
+ <div class="ui grid"> 
+
+  <div class="eight wide column"><div class="btn btn-primary btn-lg btn-flat" style="float: left;">
+                  <i class="fas fa-cart-plus fa-lg mr-2"></i> 
+                 加入购物车
+                </div>
+
+</div>
+  <div class="eight wide column"> <div class="btn btn-default btn-lg btn-flat" style="display: inline-block;">
+                  <i class="fas fa-heart fa-lg mr-2"></i> 
+                 添加到我喜欢
+                </div>
+              </div>
+
+   
+ </div>
+        
+
+</div>
+
+
+</div>
+
+<!-- 第一 -->
+
+<!-- 左边部分-->
+    <div class="ui grid">
+    
+ <div class="nine wide column">
+     <img src="assets/dist/img/ZhangAo.jpg" alt="" class="ui rounded image" width="600px" height="300px">
+ </div>
+
+ <!-- 右边部分 -->
+ <div class="seven wide column">
+    <div class="ui grid">
+        <div class="ten wide column"> <div class="ui left floated"> <h2 class="ui teal basic header">
+    <a href=" "> 广州宠物狗狗犬舍出售纯种藏獒</a></h2> 
+       <p> 发布时间：01月04日 </p> 
+       <p> 在售年龄：3个月 在售只数： 10只 </p>
+<p> 卖家承诺：诚信第一，可签订合同！</p>  </div></div>
+        <div class="six wide column" style="margin-top: 60px !important;">
+
+          <div class="ui right floated"><h2 class="ui red basic header">价格：</h2> <strong style="color: red !important;font-size: 30px !important"> 1200元</strong>
+
+        </div>
+
+
+                
+
+               
+
+
+      </div>
+        
+
+
+    </div>
+   
+   
+ <div class="ui grid"> 
+
+  <div class="eight wide column"><div class="btn btn-primary btn-lg btn-flat" style="float: left;">
+                  <i class="fas fa-cart-plus fa-lg mr-2"></i> 
+                 加入购物车
+                </div>
+
+</div>
+  <div class="eight wide column"> <div class="btn btn-default btn-lg btn-flat" style="display: inline-block;">
+                  <i class="fas fa-heart fa-lg mr-2"></i> 
+                 添加到我喜欢
+                </div>
+              </div>
+
+   
+ </div>
+        
+
+</div>
+
+
+</div>
+
+<!-- 第一 -->
+
+<!-- 左边部分-->
+    <div class="ui grid">
+    
+ <div class="nine wide column">
+     <img src="assets/dist/img/ZhangAo.jpg" alt="" class="ui rounded image" width="600px" height="300px">
+ </div>
+
+ <!-- 右边部分 -->
+ <div class="seven wide column">
+    <div class="ui grid">
+        <div class="ten wide column"> <div class="ui left floated"> <h2 class="ui teal basic header">
+    <a href=" "> 广州宠物狗狗犬舍出售纯种藏獒</a></h2> 
+       <p> 发布时间：01月04日 </p> 
+       <p> 在售年龄：3个月 在售只数： 10只 </p>
+<p> 卖家承诺：诚信第一，可签订合同！</p>  </div></div>
+        <div class="six wide column" style="margin-top: 60px !important;">
+
+          <div class="ui right floated"><h2 class="ui red basic header">价格：</h2> <strong style="color: red !important;font-size: 30px !important"> 1200元</strong>
+
+        </div>
+
+
+                
+
+               
+
+
+      </div>
+        
+
+
+    </div>
+   
+   
+ <div class="ui grid"> 
+
+  <div class="eight wide column"><div class="btn btn-primary btn-lg btn-flat" style="float: left;">
+                  <i class="fas fa-cart-plus fa-lg mr-2"></i> 
+                 加入购物车
+                </div>
+
+</div>
+  <div class="eight wide column"> <div class="btn btn-default btn-lg btn-flat" style="display: inline-block;">
+                  <i class="fas fa-heart fa-lg mr-2"></i> 
+                 添加到我喜欢
+                </div>
+              </div>
+
+   
+ </div>
+        
+
+</div>
+
+
+</div>
+
+<!-- 第一 -->
+
+<!-- 左边部分-->
+    <div class="ui grid">
+    
+ <div class="nine wide column">
+     <img src="assets/dist/img/ZhangAo.jpg" alt="" class="ui rounded image" width="600px" height="300px">
+ </div>
+
+ <!-- 右边部分 -->
+ <div class="seven wide column">
+    <div class="ui grid">
+        <div class="ten wide column"> <div class="ui left floated"> <h2 class="ui teal basic header">
+    <a href=" "> 广州宠物狗狗犬舍出售纯种藏獒</a></h2> 
+       <p> 发布时间：01月04日 </p> 
+       <p> 在售年龄：3个月 在售只数： 10只 </p>
+<p> 卖家承诺：诚信第一，可签订合同！</p>  </div></div>
+        <div class="six wide column" style="margin-top: 60px !important;">
+
+          <div class="ui right floated"><h2 class="ui red basic header">价格：</h2> <strong style="color: red !important;font-size: 30px !important"> 1200元</strong>
+
+        </div>
+
+
+                
+
+               
+
+
+      </div>
+        
+
+
+    </div>
+   
+   
+ <div class="ui grid"> 
+
+  <div class="eight wide column"><div class="btn btn-primary btn-lg btn-flat" style="float: left;">
+                  <i class="fas fa-cart-plus fa-lg mr-2"></i> 
+                 加入购物车
+                </div>
+
+</div>
+  <div class="eight wide column"> <div class="btn btn-default btn-lg btn-flat" style="display: inline-block;">
+                  <i class="fas fa-heart fa-lg mr-2"></i> 
+                 添加到我喜欢
+                </div>
+              </div>
+
+   
+ </div>
+        
+
+</div>
+
+
+</div>
+
+<!-- 第一 -->
+
+<!-- 左边部分-->
+    <div class="ui grid">
+    
+ <div class="nine wide column">
+     <img src="assets/dist/img/ZhangAo.jpg" alt="" class="ui rounded image" width="600px" height="300px">
+ </div>
+
+ <!-- 右边部分 -->
+ <div class="seven wide column">
+    <div class="ui grid">
+        <div class="ten wide column"> <div class="ui left floated"> <h2 class="ui teal basic header">
+    <a href=" "> 广州宠物狗狗犬舍出售纯种藏獒</a></h2> 
+       <p> 发布时间：01月04日 </p> 
+       <p> 在售年龄：3个月 在售只数： 10只 </p>
+<p> 卖家承诺：诚信第一，可签订合同！</p>  </div></div>
+        <div class="six wide column" style="margin-top: 60px !important;">
+
+          <div class="ui right floated"><h2 class="ui red basic header">价格：</h2> <strong style="color: red !important;font-size: 30px !important"> 1200元</strong>
+
+        </div>
+
+
+                
+
+               
+
+
+      </div>
+        
+
+
+    </div>
+   
+   
+ <div class="ui grid"> 
+
+  <div class="eight wide column"><div class="btn btn-primary btn-lg btn-flat" style="float: left;">
+                  <i class="fas fa-cart-plus fa-lg mr-2"></i> 
+                 加入购物车
+                </div>
+
+</div>
+  <div class="eight wide column"> <div class="btn btn-default btn-lg btn-flat" style="display: inline-block;">
+                  <i class="fas fa-heart fa-lg mr-2"></i> 
+                 添加到我喜欢
+                </div>
+              </div>
+
+   
+ </div>
+        
+
+</div>
+
+
+</div>
+
+<!-- 第一 -->
+
+<!-- 左边部分-->
+    <div class="ui grid">
+    
+ <div class="nine wide column">
+     <img src="assets/dist/img/ZhangAo.jpg" alt="" class="ui rounded image" width="600px" height="300px">
+ </div>
+
+ <!-- 右边部分 -->
+ <div class="seven wide column">
+    <div class="ui grid">
+        <div class="ten wide column"> <div class="ui left floated"> <h2 class="ui teal basic header">
+    <a href=" "> 广州宠物狗狗犬舍出售纯种藏獒</a></h2> 
+       <p> 发布时间：01月04日 </p> 
+       <p> 在售年龄：3个月 在售只数： 10只 </p>
+<p> 卖家承诺：诚信第一，可签订合同！</p>  </div></div>
+        <div class="six wide column" style="margin-top: 60px !important;">
+
+          <div class="ui right floated"><h2 class="ui red basic header">价格：</h2> <strong style="color: red !important;font-size: 30px !important"> 1200元</strong>
+
+        </div>
+
+
+                
+
+               
+
+
+      </div>
+        
+
+
+    </div>
+   
+   
+ <div class="ui grid"> 
+
+  <div class="eight wide column"><div class="btn btn-primary btn-lg btn-flat" style="float: left;">
+                  <i class="fas fa-cart-plus fa-lg mr-2"></i> 
+                 加入购物车
+                </div>
+
+</div>
+  <div class="eight wide column"> <div class="btn btn-default btn-lg btn-flat" style="display: inline-block;">
+                  <i class="fas fa-heart fa-lg mr-2"></i> 
+                 添加到我喜欢
+                </div>
+              </div>
+
+   
+ </div>
+        
+
+</div>
+
+
+</div>
+
+<!-- 第一 -->
+
+<!-- 左边部分-->
+    <div class="ui grid">
+    
+ <div class="nine wide column">
+     <img src="assets/dist/img/ZhangAo.jpg" alt="" class="ui rounded image" width="600px" height="300px">
+ </div>
+
+ <!-- 右边部分 -->
+ <div class="seven wide column">
+    <div class="ui grid">
+        <div class="ten wide column"> <div class="ui left floated"> <h2 class="ui teal basic header">
+    <a href=" "> 广州宠物狗狗犬舍出售纯种藏獒</a></h2> 
+       <p> 发布时间：01月04日 </p> 
+       <p> 在售年龄：3个月 在售只数： 10只 </p>
+<p> 卖家承诺：诚信第一，可签订合同！</p>  </div></div>
+        <div class="six wide column" style="margin-top: 60px !important;">
+
+          <div class="ui right floated"><h2 class="ui red basic header">价格：</h2> <strong style="color: red !important;font-size: 30px !important"> 1200元</strong>
+
+        </div>
+
+
+                
+
+               
+
+
+      </div>
+        
+
+
+    </div>
+   
+   
+ <div class="ui grid"> 
+
+  <div class="eight wide column"><div class="btn btn-primary btn-lg btn-flat" style="float: left;">
+                  <i class="fas fa-cart-plus fa-lg mr-2"></i> 
+                 加入购物车
+                </div>
+
+</div>
+  <div class="eight wide column"> <div class="btn btn-default btn-lg btn-flat" style="display: inline-block;">
+                  <i class="fas fa-heart fa-lg mr-2"></i> 
+                 添加到我喜欢
+                </div>
+              </div>
+
+   
+ </div>
+        
+
+</div>
+
+
+</div>
+
+<!-- 第一 -->
+
+<!-- 左边部分-->
+    <div class="ui grid">
+    
+ <div class="nine wide column">
+     <img src="assets/dist/img/ZhangAo.jpg" alt="" class="ui rounded image" width="600px" height="300px">
+ </div>
+
+ <!-- 右边部分 -->
+ <div class="seven wide column">
+    <div class="ui grid">
+        <div class="ten wide column"> <div class="ui left floated"> <h2 class="ui teal basic header">
+    <a href=" "> 广州宠物狗狗犬舍出售纯种藏獒</a></h2> 
+       <p> 发布时间：01月04日 </p> 
+       <p> 在售年龄：3个月 在售只数： 10只 </p>
+<p> 卖家承诺：诚信第一，可签订合同！</p>  </div></div>
+        <div class="six wide column" style="margin-top: 60px !important;">
+
+          <div class="ui right floated"><h2 class="ui red basic header">价格：</h2> <strong style="color: red !important;font-size: 30px !important"> 1200元</strong>
+
+        </div>
+
+
+                
+
+               
+
+
+      </div>
+        
+
+
+    </div>
+   
+   
+ <div class="ui grid"> 
+
+  <div class="eight wide column"><div class="btn btn-primary btn-lg btn-flat" style="float: left;">
+                  <i class="fas fa-cart-plus fa-lg mr-2"></i> 
+                 加入购物车
+                </div>
+
+</div>
+  <div class="eight wide column"> <div class="btn btn-default btn-lg btn-flat" style="display: inline-block;">
+                  <i class="fas fa-heart fa-lg mr-2"></i> 
+                 添加到我喜欢
+                </div>
+              </div>
+
+   
+ </div>
+        
+
+</div>
+
+
+</div>
+
+<!-- 第一 -->
+
+<!-- 左边部分-->
+    <div class="ui grid">
+    
+ <div class="nine wide column">
+     <img src="assets/dist/img/ZhangAo.jpg" alt="" class="ui rounded image" width="600px" height="300px">
+ </div>
+
+ <!-- 右边部分 -->
+ <div class="seven wide column">
+    <div class="ui grid">
+        <div class="ten wide column"> <div class="ui left floated"> <h2 class="ui teal basic header">
+    <a href=" "> 广州宠物狗狗犬舍出售纯种藏獒</a></h2> 
+       <p> 发布时间：01月04日 </p> 
+       <p> 在售年龄：3个月 在售只数： 10只 </p>
+<p> 卖家承诺：诚信第一，可签订合同！</p>  </div></div>
+        <div class="six wide column" style="margin-top: 60px !important;">
+
+          <div class="ui right floated"><h2 class="ui red basic header">价格：</h2> <strong style="color: red !important;font-size: 30px !important"> 1200元</strong>
+
+        </div>
+
+
+                
+
+               
+
+
+      </div>
+        
+
+
+    </div>
+   
+   
+ <div class="ui grid"> 
+
+  <div class="eight wide column"><div class="btn btn-primary btn-lg btn-flat" style="float: left;">
+                  <i class="fas fa-cart-plus fa-lg mr-2"></i> 
+                 加入购物车
+                </div>
+
+</div>
+  <div class="eight wide column"> <div class="btn btn-default btn-lg btn-flat" style="display: inline-block;">
+                  <i class="fas fa-heart fa-lg mr-2"></i> 
+                 添加到我喜欢
+                </div>
+              </div>
+
+   
+ </div>
+        
+
+</div>
+
+
+</div>
+
+
+
+   
+
+
+
+
+
+
+
+
+ </div> 
+
+
+
+
+
+
+
+
+
+
+        <div class="ui  center aligned segment"> <i class="chevron left icon"></i>
+            <div class="ui  pagination  menu">
+
+                <a href="" style="display: inline-block !important;"><div class="teal active item">1</div></a>
+
+
+                <a href=""><div class=" item">2</div></a>
+                <a href=""><div class=" item">3</div></a>
+                <a href=""><div class="item">4</div></a>
+                <a href=""><div class="item">...</div></a>
+                    <div class="teal item">100</div>
+
+
+
+        </div>
+            <i class="chevron right icon "></i>
+
+            <div class="ui right floated button"> 
+
+             <button class="ui teal basic rounded button">
+        
+增加
+
+ </button>
+
+    <button class="ui red basic rounded button">
+        
+   删除
+
+ </button> </div>
+  
+        </div>
+
+
+
+
+
+
+
+
+
+
+   
+    <footer class="ui inverted vertical segment m-panded-tb-massive m-text-thin">
+    <div class="ui container">
+        <!-- grid分成等级16份 -->
+        <!-- divided分割线 -->
+        <!-- ui center aligned container 所有的字体居中 -->
+        <div class="ui center aligned container">
+            <div class="ui inverted divided grid">
+
+                <div class="three wide column">
+                    <!-- rounded修饰图片圆角-->
+                    <div class="item">
+                        <img src="assets/dist/img/BianJingMuYanngQuan.jpg" class="ui rounded image" alt="" style="width: 200px !important"> </div>
+
+                </div>
+
+                <div class="three wide column">
+
+                    <h4 class="ui inverted header"> 买狗</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">藏獒</a>
+                        <a href="#" class="item">吉拉拉(love art)</a>
+                        <a href="#" class="item">法国斗牛犬</a>
+
+                    </div>
+                </div>
+
+                <div class="three wide column">
+
+                    <h4 class="ui inverted header "> 联系我们</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">E-mail 2282240015@qq.com</a>
+                        <a href="#" class="item">电话17886977662</a>
+                        <a href="#" class="item">微信(kind and still boy)</a>
+
+                    </div>
+
+
+                </div>
+                <div class="seven wide column">
+
+                    <h4 class="ui inverted header m-opacity-mini">AnimateHpppy</h4>
+
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">
+                        这是一个友好的，诚信的卖狗网站，我们也非常喜欢小动物，所以收留男很多的流浪狗，它们非常可爱
+                        ，我们会给他们消毒，检测它们的身体状况。
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- 分割线 ui-->
+            <div class="ui  section teal divider"> <p class="m-text-spaced m-text-lined" style="color: white"> Copyright @2016-2017</p>
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+  
+  <!-- vertical buttons -->
+  <div class="m-fixed m-right-bottom m-padded m-position">
+    <div class="ui vertical icon buttons">
+        <a href="" class="ui icon black button"><i class="share square icon"></i></a>
+        <button class="ui teal basic toc button">电话</button>
+        <button class="ui chatwithqq teal button"> <i class="qq icon"></i></button>
+        <button class="ui technicalgroup teal button">技术交流群</button>
+
+          <!-- 这个图标可以使页面回到顶部 ui icon button  chevron up icon -->
+            <a href="" class="ui icon black button"><i class="chevron circle up icon"></i></a>
+            <!-- chevron up -->
+
+<!--        电话-->
+        <div class="ui call  flowing popup transition hidden" >
+            <div class="ui label" style="color: red;font-size: 15px">17886977662</div>
+    </div>
+<!--        交流群-->
+        <div class="ui group  flowing popup transition hidden">
+            <div  ><img src="../../static/images/qq.png" alt="" class="rounded image" width="200px !important;" height="200px"></div>
+    </div>
+
+<!--qq  -->
+
+        <div class="ui poupcode flowing popup transition hidden">
+            <div  ><img src="../../static/images/qq.png" alt="" class="rounded image" width="200px !important;" height="200px"></div>
+        </div>
+
+
+
+
+    </div>
+</div>
+  
+
+
+   
+
+
+
+
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script src="assets/dist/js/semantic.min.js"></script>
+
+
+<!-- vertical buttons js -->
+<script>
+  $('.toc.button').popup({
+        popup:$('.call'),
+        on:'hover',
+        position:'left center',
+
+
+    });
+    $('.chatwithqq').popup({
+        popup:$('.poupcode'),
+        on:'hover',
+        position:'right center',
+
+
+    });
+    $('.technicalgroup').popup({
+        popup:$('.group'),
+        //有 click hover
+        on:'hover',
+        position:'right center',
+
+
+    });
+
+
+</script>
+
+
+<!-- 分类的下拉框 -->
+<script>
+
+    $('.ui.dropdown').dropdown({
+
+        on:'hover'
+
+
+    });
+
+
+</script>
+
+
+</body>
+</html>

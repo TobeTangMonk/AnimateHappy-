@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vue的搜索</title>
+	<link rel="stylesheet" href="assets/dist/js/vue.js">
+</head>
+<body>
+
+<div>
+	<div class="goback">
+		<button class="return" @click="goback">
+		返回
+</button></div>
+<div><input type="text
+
+	" placeholder="输入搜索的内容" v-model="search">
+	<button type="primary" @click="Search">搜索</button>
+
+
+
+</div>
+
+
+<!-- 搜索后打印出来 -->
+<div v-if="serachData.length>0">
+<ul v-for="(item,index) in searchData" :key="index">
+
+
+
+
+	
+<li>
+	<span>{{item.contact_name}}</span>
+	<span>{{item.address}}</span>
+	<span>{{item.phone}}</span>	
+</li>
+
+
+</ul>	
+
+
+</div> 
+
+<!-- 搜索前的 -->
+<div v-else>
+	<ul v-for="(item,index) in list " :key="index">
+		<span>{{item.contact_name}}</span>
+		<span>{{item.address}}</span>
+		<span>{{item.phone}}</span>
+	</ul>
+	
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+	
+</body>
+</html>

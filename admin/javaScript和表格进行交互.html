@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+    var tempcolor;
+    function yz(obj)
+    {
+        if(obj.value == "改变")
+        {
+            obj.value = "提交"; //可以直接传对象
+        }
+        else
+        {
+            obj.value = "改变"; //可以直接传对象
+        }
+        
+        return false; //返回为假。不提交
+    }
+    function tb()
+    {
+        //可以直接读取表单里的name属性元素。但是必须从表单开始，一级一级的找 --也可以直接用form表达来访问表单里的        //元素 如：form.ttt.value;
+        form1.ttt.value=form1.txts.value; 
+    }
+    
+    function changeover(obj)
+    {
+        tempcolor = obj.style.backgroundColor; //记录之前的元素
+        obj.style.backgroundColor = "#F00";        
+    }
+    function changeout(obj)
+    {
+        obj.style.backgroundColor = tempcolor;
+    }
+    
+    window.onload = function()
+    {
+        var obj = document.getElementsByTagName("tr");
+        for(var i =0; i < obj.length; i++)
+        {
+            if(i%2==0) //下标从零开始。 所以得到效果是奇数行染色
+            {
+                obj[i].style.backgroundColor="#00FF00";    
+            }
+        }
+    }
+</script>
+</head>
+
+<body>
+    <form name="form1" method="post" action="#">
+        <input type="text" name="txts" onkeyup="tb();" />
+         <!--传递本身 这个应用还可以用在动态改变表格的背景色。-->
+        <input type="submit" value="提交" onclick="return yz(this);" />
+        <input type="text" name="ttt" />
+    </form>
+    
+    <!--实时改变表格背景色特效-->
+    <table border="1" bordercolor="#000000" cellpadding="0" cellspacing="0">
+        <tr height="20px" onmouseover="changeover(this);" onmouseout="changeout(this);"><td width="200px"></td><td width="200px"></td><td width="200px"></td></tr>
+        <tr height="20px" onmouseover="changeover(this);" onmouseout="changeout(this);"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr height="20px" onmouseover="changeover(this);" onmouseout="changeout(this);"><td></td><td></td><td></td></tr>
+        <tr height="20px" onmouseover="changeover(this);" onmouseout="changeout(this);"><td></td><td></td><td></td></tr>
+        <tr height="20px" onmouseover="changeover(this);" onmouseout="changeout(this);"><td></td><td></td><td></td></tr>
+    </table>
+</body>
+</html>
